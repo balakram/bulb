@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The JavaScript <b>this</b> Keyword</h2>
+
+<p>In this example, <b>this</b> represents the <b>person</b> object.</p>
+<p>Because the person object "owns" the fullName method.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     : 5566,
+  salary : 9875
+  
+};
+/*
+fullName : function() {
+    return this.firstName + " " + this.lastName+" has ID = "+this.id;
+  }
+*/
+
+/*Display data from the object:*/
+var x;
+txt = ""
+for (x in person) {
+  txt += person[x] + " ";
+}
+//alert(txt);
+document.getElementById("demo").innerHTML = txt;
+
+//document.getElementById("demo").innerHTML = person.fullName();
+var Arr = Array(3);
+Arr[0]= 24;
+Arr[1]= 64;
+Arr[2]= 44;
+var Arrr = Array(3);
+Arrr [0]= 24;
+Arrr [1]= 64;
+Arrr [2]= 44;
+
+var XYZ = Arr.concat(Arrr);
+alert(XYZ);
+Arr.push(90);
+Arr.unshift(90);
+alert(Arr);
+alert(Arr.shift());
+var xy = Arr.pop();
+alert(Arr);
+alert(xy+ ' has been deleted');
+</script>
+
+</body>
+</html>

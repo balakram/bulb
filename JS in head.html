@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+
+// javascript code demonstrating a simple object
+var school = {
+name: ‘Vivekananda School’,
+location : ‘Delhi’,
+established : ‘1971’,
+displayInfo : function(){
+console.log(`${school.name} was established
+in ${school.established} at ${school.location}`);
+}
+}
+school.displayInfo();
+
+
+</script>
+</head>
+<body>
+
+<h2>JavaScript in Head</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+</html> 
+
+
